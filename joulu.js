@@ -128,20 +128,20 @@ function randomNumber(min, max) {
 function drawSnowflake() {
     ctv.beginPath()
     ctv.clearRect(0, 0, 500, 500)
-    ctv.fillStyle = "#fff";
+    ctv.fillStyle = "#fff"
     for (let i=0; i<flakeArr.length;i++){
         let flake = flakeArr[i]
         ctv.moveTo(flake.X, flake.Y);
         ctv.arc(flake.X,flake.Y, flake.R, 0, 2*Math.PI)
+        ctv.fill();
     }
-    ctv.fill();
     ctv.closePath();
     moveFlakes()
 }
 
 function moveFlakes() {
     for (let i = 0; i < flakeArr.length; i++) {
-        var flake = flakeArr[i]
+        let flake = flakeArr[i]
         flake.Y += 1;
         flake.X += Math.sin(0.01)*2;
         if (flake.Y > 500){
