@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Head Jõulu</title>
+    <script src="joulu.js"></script>
+</head>
+<body>
+<div style="position: absolute;">
+    <canvas id="cnv" width="500" height="500"
+            style="position: absolute; left: 0; top: 0; z-index: 0; background-color: #3333a1; margin-top: 100px"></canvas>
+    <canvas id="snowCnv" width="500" height="500"
+            style="position: absolute; left: 0; top: 0; z-index: 1; opacity: 0.5; margin-top: 100px"></canvas>
+</div><br>
+<input type="button" value="elka" onclick="drawTree()">
+<input type="button" value="igrushki" onclick="genBalls()">
+<input type="button" value="snow" onclick="snow()"><br>
+</body>
+</html>
